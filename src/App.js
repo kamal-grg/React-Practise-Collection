@@ -2,6 +2,14 @@ import React from "react";
 import "./App.css";
 import Display from "./components/Display";
 import Keypad from "./components/Keypad";
+import HideShow from "./components/HideShow";
+import TwowayBinding from "./components/TwowayBinding";
+import ConditionalDisableButton from "./components/ConditionalDisableButton";
+import CounterUpDown from "./components/CounterUpDown";
+import VowelCount from "./components/VowelCount";
+import CapitalizedEachWord from "./components/CapitalizedEachWord";
+import MaxCharInString from "./components/MaxCharInString";
+import BalanceParenthesis from "./components/BalanceParenthesis";
 class App extends React.Component {
   constructor() {
     super();
@@ -65,6 +73,22 @@ class App extends React.Component {
           acClicked={acClicked}
           equalClicked={equalClicked}
         />
+        <hr/>
+        <HideShow/>
+        <hr/>
+        <TwowayBinding/>
+        <hr/>
+        <ConditionalDisableButton/>
+        <hr/>
+        <CounterUpDown/>
+        <hr/>
+        <VowelCount />
+        <hr/>
+        <CapitalizedEachWord/>
+        <hr/>
+        <MaxCharInString />
+        <hr/>
+        <BalanceParenthesis/>
       </div>
     );
   }
